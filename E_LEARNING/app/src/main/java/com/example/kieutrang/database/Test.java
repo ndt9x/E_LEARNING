@@ -12,17 +12,18 @@ public class Test {
         super();
     }
 
-    public Test(String category, String question, int id, String answerA, String answerC, String nswerB, String answerD, String answerTrue) {
-        super();
-        this.category = category;
-        this.question = question;
-        this.id = id;
-        this.answerA = answerA;
-        this.answerC = answerC;
-        this.answerB = nswerB;
-        this.answerD = answerD;
-        this.answerTrue = answerTrue;
-    }
+  	public Test(int id, String category, String question, String answerA,
+			String answerB, String answerC, String answerD, String answerTrue) {
+		super();
+		this.id = id;
+		this.category = category;
+		this.question = question;
+		this.answerA = answerA;
+		this.answerB = answerB;
+		this.answerC = answerC;
+		this.answerD = answerD;
+		this.answerTrue = answerTrue;
+	}
 
     public Test(String category, String question, String answerA, String nswerB, String answerC, String answerD, String answerTrue) {
         super();
