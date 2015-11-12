@@ -7,27 +7,28 @@ public class Vocabulary {
     private int id;
     private String lesson, tenchu, phienam, nghia, vidu;
 
-    public Vocabulary(String vidu, String nghia, String phienam, String tenchu, String lesson, int id) {
+    public Vocabulary(int id, String lesson, String tenchu, String phienam,
+            String nghia, String vidu) {
         super();
-        this.vidu = vidu;
-        this.nghia = nghia;
-        this.phienam = phienam;
-        this.tenchu = tenchu;
-        this.lesson = lesson;
         this.id = id;
+        this.lesson = lesson;
+        this.tenchu = tenchu;
+        this.phienam = phienam;
+        this.nghia = nghia;
+        this.vidu = vidu;
+    }
+    public Vocabulary(String lesson, String tenchu, String phienam,
+            String nghia, String vidu) {
+        super();
+        this.lesson = lesson;
+        this.tenchu = tenchu;
+        this.phienam = phienam;
+        this.nghia = nghia;
+        this.vidu = vidu;
     }
 
     public Vocabulary() {
         super();
-    }
-
-    public Vocabulary(String lesson, String tenchu, String phienam, String nghia, String vidu) {
-        super();
-        this.lesson = lesson;
-        this.tenchu = tenchu;
-        this.phienam = phienam;
-        this.nghia = nghia;
-        this.vidu = vidu;
     }
 
     public String getLesson() {
