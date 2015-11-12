@@ -54,8 +54,8 @@ public class extra_lesson extends Activity implements View.OnClickListener{
         arr= database.getAllExtra();
         if (arr.size()!=0) {
             bundle = getIntent().getExtras();
-            tvExtra_lesson.setText(arr.get(bundle.getInt("idStory")).getTen());
-            tvExtra_content.setText(arr.get(bundle.getInt("idStory")).getNoidung());
+            tvExtra_lesson.setText(arr.get(bundle.getInt("idExtra")).getTen());
+            tvExtra_content.setText(arr.get(bundle.getInt("idExtra")).getNoidung());
         }
 
     }

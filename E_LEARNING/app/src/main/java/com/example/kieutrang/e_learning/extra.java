@@ -71,7 +71,7 @@ public class extra extends Activity implements View.OnClickListener{
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Intent intent=new Intent(extra.this,extra_lesson.class);
-                intent.putExtra("idStory", position);
+                intent.putExtra("idExtra", position);
                 startActivity(intent);
 
             }
