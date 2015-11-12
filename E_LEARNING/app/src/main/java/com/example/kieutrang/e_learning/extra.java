@@ -21,7 +21,7 @@ public class extra extends Activity implements View.OnClickListener{
 
     private ImageView img_EVol, img_EExer, img_ETest, img_EExtra;
     private TextView tvEExer, tvEVol, tvETest, tvEExtra, tvEBook;
-    private ListView lvSLesson;
+    private ListView lvELesson;
     private ArrayList<Extra> arrList = new ArrayList<Extra>();
     private ExtraAdapter adapter;
     private Context context;
@@ -64,9 +64,9 @@ public class extra extends Activity implements View.OnClickListener{
         tvEExtra = (TextView) findViewById(R.id.tvEExtra);
         tvEBook = (TextView) findViewById(R.id.tvEExtra);
         adapter=new ExtraAdapter(this, arrList, imgid, R.layout.extra_item);
-        lvSLesson=(ListView)findViewById(R.id.lvELesson);
-        lvSLesson.setAdapter(adapter);
-        lvSLesson.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        lvELesson=(ListView)findViewById(R.id.lvELesson);
+        lvELesson.setAdapter(adapter);
+        lvELesson.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
